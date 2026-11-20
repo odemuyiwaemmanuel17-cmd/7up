@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react'
-import { motion, useScroll, useInView } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 
 const products = [
   {
@@ -65,14 +65,8 @@ const products = [
 ]
 
 export default function ProductsSection() {
-  const containerRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  })
-
   return (
-    <section id="products" ref={containerRef} className="relative py-32">
+    <section id="products" className="relative py-32">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-green-950/10 to-black" />
       

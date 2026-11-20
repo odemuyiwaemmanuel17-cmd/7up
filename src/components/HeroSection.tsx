@@ -17,7 +17,12 @@ export default function HeroSection() {
     <section ref={ref} className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-green-950/40 via-black to-black" />
+        <img 
+          src="https://image.qwenlm.ai/generated-images/6055260e-fbbf-4b41-a067-3aa63de3f986/_result.png" 
+          alt="" 
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-green-950/40 via-black/80 to-black" />
         
         {/* Animated grid */}
         <motion.div
